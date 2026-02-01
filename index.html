@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- GitHub Pages SEO & SNS Meta Tags -->
+    <title>공존 디자인 스튜디오 - 5주년 기부 캠페인</title>
+    <meta name="title" content="공존 5주년 캠페인: 우리의 울타리가 되어주세요">
+    <meta name="description" content="성인발달장애인의 평범한 일상을 지키는 따뜻한 나눔. 지금 공존 디자인 스튜디오에서 참여하세요.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="공존 - 우리의 울타리가 되어주세요">
+    <meta property="og:description" content="작은 나눔이 모여 커다란 기적을 만듭니다.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:locale" content="ko_KR">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 배포 시 폰트 크기 강제 고정 (브라우저 설정 무시) */
+        :root {
+            --canvas-width: 400px;
+            --fixed-title: 28px;
+            --fixed-body: 16px;
+            --fixed-subtitle: 12px;
+            --fixed-highlight: 13px;
+        }
+        
+        body {
+            font-family: 'Noto+Sans+KR', sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            word-break: keep-all;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 고정 픽셀 텍스트 클래스 */
+        .fixed-title { 
+            font-size: var(--fixed-title) !important; 
+            line-height: 1.3 !important;
+            font-weight: 900 !important;
+            letter-spacing: -0.03em !important;
+        }
+        .fixed-body { 
+            font-size: var(--fixed-body) !important; 
+            line-height: 1.6 !important;
+            font-weight: 500 !important;
+        }
+        .fixed-subtitle { 
+            font-size: var(--fixed-subtitle) !important; 
+            font-weight: 800 !important;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .fixed-highlight {
+            font-size: var(--fixed-highlight) !important;
+            font-weight: 800 !important;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* 전문 디자인 캔버스 워크스테이션 배경 */
+        .canvas-bg {
+            background-color: #e2e8f0;
+            background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        /* 캡처를 위한 캔버스 크기 강제 고정 */
+        .canvas-container {
+            width: var(--canvas-width);
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "html-to-image": "https://esm.sh/html-to-image@^1.11.11"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="canvas-bg">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
